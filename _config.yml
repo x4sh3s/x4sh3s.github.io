@@ -23,7 +23,7 @@ timezone: Africa/Casablanca
 
 title: x4sh3s                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Not evil, just misunderstood ...   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -91,7 +91,7 @@ avatar: '/commons/avatar.jpg'
 toc: true
 
 comments:
-  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
