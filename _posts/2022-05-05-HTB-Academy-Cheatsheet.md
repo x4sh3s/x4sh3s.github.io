@@ -7,9 +7,8 @@ tags: [google analytics, pageviews]
 ---
 
 
-# 📦 HTB | Academy
+## 📦 HTB | Academy
 
-# Intro to Academy
 
 ### Cheatsheet
 
