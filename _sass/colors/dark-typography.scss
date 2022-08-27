@@ -5,6 +5,8 @@
 @mixin dark-scheme {
   /* Framework color */
   --body-bg: var(--main-wrapper-bg);
+  // --body-bg: #0c0c14;
+
   --mask-bg: rgb(68, 69, 70);
   --main-wrapper-bg: rgb(27, 27, 30);
   --main-border-color: rgb(44, 45, 45);
