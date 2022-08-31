@@ -69,9 +69,11 @@
   .highlight .gi { color: #a6e22e; background-color: #0b5858; } /* Generic.Inserted & Diff Inserted */
 
   /* -----  custom styles ------ */
+// All this is for syntax block
 
-  --highlight-bg-color: #252525;
-  --highlighter-rouge-color: #de6b18;
+  --highlight-bg-color: #1f141f; 
+  // --highlight-bg-color: #252525;
+  --highlighter-rouge-color: rgba(204, 50, 55, 0.986); // this is for link
   
   --highlight-lineno-color: #6c6c6d;
   --inline-code-bg: #272822;

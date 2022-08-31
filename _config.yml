@@ -23,7 +23,7 @@ timezone: Africa/Casablanca
 
 title: x4sh3s                          # the main title
 
-tagline: Not evil, just misunderstood ...   # it will display as the sub-title
+tagline: Cybersec Researcher, Jr Red Team Op ...  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.

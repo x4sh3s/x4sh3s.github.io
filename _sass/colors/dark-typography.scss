@@ -7,18 +7,22 @@
   --body-bg: var(--main-wrapper-bg);
   // --body-bg: #0c0c14;
 
-  --mask-bg: rgb(68, 69, 70);
-  --main-wrapper-bg: rgb(27, 27, 30);
-  --main-border-color: rgb(44, 45, 45);
+  --mask-bg: rgb(26, 78, 39);
+  // --main-wrapper-bg: #080005f8;
+  --main-wrapper-bg: radial-gradient(closest-side, #080005d3 40%, #030203 80%);
+  --main-border-color: rgb(39, 0, 33);
 
+  // --mask-bg: rgb(68, 69, 70);
+  // --main-wrapper-bg: rgb(27, 27, 30);
+  // --main-border-color: rgb(44, 45, 45);
   /* Common color */
   --text-color: rgb(175, 176, 177);
   --text-muted-color: rgb(107, 116, 124);
   --heading-color: #cccccc;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: rgb(117, 117, 117);
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
+  --link-color: rgb(194, 129, 188);
+  --link-underline-color: rgb(102, 3, 95);
   --button-bg: rgb(39, 40, 43);
   --btn-border-color: rgb(63, 65, 68);
   --btn-backtotop-color: var(--text-color);
@@ -30,33 +34,44 @@
   --checkbox-checked-color: var(--link-color);
 
   /* Sidebar */
-  --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
+  --sidebar-bg: radial-gradient(circle, #2c021cc9 0%, #030203 100%);
   --sidebar-muted-color: #6d6c6b;
   --sidebar-active-color: rgb(255 255 255 / 80%);
   --nav-cursor-color: rgb(183, 182, 182);
-  --sidebar-btn-bg: rgb(117 116 116 / 20%);
+  --sidebar-btn-bg: rgba(124, 76, 104, 0.2);
 
+  // --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
+  // --sidebar-muted-color: #6d6c6b;
+  // --sidebar-active-color: rgb(255 255 255 / 80%);
+  // --nav-cursor-color: rgb(183, 182, 182);
+  // --sidebar-btn-bg: rgb(117 116 116 / 20%);
   /* Topbar */
   --topbar-text-color: var(--text-color);
-  --topbar-wrapper-bg: rgb(39, 40, 43);
-  --search-wrapper-bg: rgb(34, 34, 39);
-  --search-wrapper-border-color: rgb(34, 34, 39);
+  --topbar-wrapper-bg: rgba(26, 13, 21, 0.932);
+  --search-wrapper-bg: rgba(27, 11, 23, 0.582);
+  --search-wrapper-border-color: rgb(63, 18, 61);
   --search-icon-color: rgb(100, 102, 105);
   --input-focus-border-color: rgb(112, 114, 115);
 
+  // --topbar-text-color: var(--text-color);
+  // --topbar-wrapper-bg: rgb(39, 40, 43);
+  // --search-wrapper-bg: rgb(34, 34, 39);
+  // --search-wrapper-border-color: rgb(34, 34, 39);
+  // --search-icon-color: rgb(100, 102, 105);
+  // --input-focus-border-color: rgb(112, 114, 115);
   /* Home page */
   --post-list-text-color: rgb(175, 176, 177);
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: rgb(64, 65, 66);
+  --btn-paginator-hover-color: rgb(68, 55, 66);
   --btn-paginator-border-color: var(--btn-border-color);
   --btn-text-color: var(--text-color);
-  --pin-bg: rgb(34 35 37);
+  --pin-bg: rgb(51, 31, 50);
   --pin-color: inherit;
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
+  --toc-highlight: rgb(131, 187, 233);
   --tag-bg: rgb(41, 40, 40);
-  --tag-hover: rgb(43, 56, 62);
+  --tag-hover: rgb(46, 28, 44);
   --tb-odd-bg: rgba(42, 47, 53, 0.52); /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
@@ -64,7 +79,7 @@
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
   --relate-post-date: var(--text-muted-color);
-  --card-bg: rgb(39, 40, 43);
+  --card-bg: #2c222c;
   --card-border-color: rgb(53, 53, 60);
   --card-box-shadow: var(--main-wrapper-bg);
   --preview-img-bg: radial-gradient(circle, rgb(22 22 24) 0%, rgb(32 32 32) 100%);
