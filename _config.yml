@@ -26,7 +26,7 @@ title: x4sh3s                          # the main title
 tagline: CyberSecurity Researcher, Jr Red Team Operator ...  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A Blog where i share stuff that i learned, create or found related to red teaming Cybersecurity ...
+  A Blog where i share stuff that i learned, create or found related to red teaming and Cybersecurity In General ...
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://x4sh3s.github.io'
@@ -73,7 +73,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: dark  # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url

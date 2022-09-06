@@ -8,7 +8,7 @@ math: true
 mermaid: true
 pin: false
 # published: false
-hide: true
+hidden: true
 image:
   path: /commons/devices-mockup.png
   width: 800
