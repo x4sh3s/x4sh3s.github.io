@@ -23,10 +23,10 @@ timezone: Africa/Casablanca
 
 title: x4sh3s                          # the main title
 
-tagline: Cybersec Researcher, Jr Red Team Op ...  # it will display as the sub-title
+tagline: CyberSecurity Researcher, Jr Red Team Operator ...  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A Blog where i share stuff that i learned, create or found related to red teaming Cybersecurity ...
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://x4sh3s.github.io'

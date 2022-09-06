@@ -7,8 +7,9 @@ tags: [typography, ctf]
 math: true
 mermaid: true
 pin: false
+published: false
 image:
-  path: /commons/devices-mockup.png
+  path: /commons/devices-mockup2.png
   width: 800
   height: 500
   alt: Responsive rendering of Chirpy theme on multiple devices.
