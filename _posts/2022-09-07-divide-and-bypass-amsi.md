@@ -16,21 +16,21 @@ This post is about a new simple way to bypass AMSI (Antimalware Scan Interface),
 ## Introduction
 
 In the last few years, Powershell become so popular and a great target for hackers, as it provide access to almost all windows's components, due to its integration with .NET framework, which allows us, Offensive security guys to perform differents attacks without even touching the disk, and that make AV jobs more difficut! 
-Because of that, Microsoft introduced AMSI in 2013 as a defence Layer against this type of attacks, you can read all about it here.
+Because of that, Microsoft introduced AMSI in 2015 as a defence Layer against this type of attacks, you can read all about it [here](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal).
 
-A defense mechanism for the offensive side, means that it need a bypass, and that's what happened, new bypassed are discovered, Matt Graeber's Reflection method, Patching amsi.dll AmsiScanBuffer by rasta-mouse etc ..
+A defense mechanism for the offensive side, means that it need a bypass, and that's what happened, new bypasses are discovered, Matt Graeber's Reflection method, Patching amsi.dll AmsiScanBuffer by rasta-mouse etc ...
 
 
 ## Problem?
 
 With all those differents AMSI bypasses, using .NET related offensive tools become possible again. Until those AMSI bypasses got signatures and become detected, and that open a new static analysis bypass/ obfuscation adventures, Which sometimes become so boring and time consuming with a high possibility to not get a good result.
 
-Personally, i use powershell a lot, and i got tired of obfuscating small scripts, so i was very important for me to find a new way to bypass AMSI in powershell ..
+Personally, i use powershell a lot, and i got tired of obfuscating small scripts, so it was very important for me to find a new way to bypass AMSI in powershell ..
 
 ## Thought Process
 
 I'm sure if you have ever played with AMSI bypass before, you have noticed that copying pasting a script into a powershell terminal will bypass AMSI, even if the script itself is detected.
-And that's because by copying and pasting a script, it's executed as separated lines, and it's very unusual to create a signature for and individual line, because that will cause alot of false positive. So how to get advange of this ..? how can this be use in a real scenario? Maybe dividing the script into small pieces? let's try this ..
+And that's because by copying and pasting a script, it's executed as separated lines, and it's very unusual to create a signature for and individual line, because that will cause alot of false positives. So how to get advantage of this ..? how can this be used in a real scenario? Maybe dividing the script into small files? let's try this ..
 
 ### Simple Test
 
@@ -231,7 +231,7 @@ It Successfully Bypass AMSI, without changing a letter in the code! Niice..
 
 ![It's All Good, Man](/commons/Saul_Godman.jif)
 
-> In case it's detected, breaking the script into more files (Line/file) will do the job, unless Microsoft finds a way to deny this techinique. Until then, Enjoy ^^
+> In case it's detected, breaking the script into more files (Line/file) will do the job, unless Microsoft finds a way to deny this method. Until then, Enjoy ^^
 {: .prompt-warning }
 
 
@@ -239,7 +239,7 @@ It Successfully Bypass AMSI, without changing a letter in the code! Niice..
 
 We reached the end of the post, 
 
-As a review, we saw how to bypass AMSI by dividing a script into small file. I thing the most useful use case of this method is execute an AMSI bypass, but it can be applied on any scripts ( small scripts ), Reverse shell, FODHelper UAC Bypass .. I didn't testing on a script that contains defined functions, but the principle stay the same.
+As a review, we saw how to bypass AMSI by dividing a script into small files. I think the most useful use-case of this method is execute an AMSI bypass, but it can be applied on any scripts ( small scripts ), Reverse shell, FODHelper UAC Bypass .. I didn't testing on a script that contains defined functions, but the principle stay the same.
 
 i hope you learned something new by reading this post, if you have any comment/idea let me know, Any feedback will be appreciated .. 
 
@@ -250,3 +250,5 @@ i hope you learned something new by reading this post, if you have any comment/i
 - ***Add-Type***                [https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7.2](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7.2)
 
 - ***RastaMouse Amsi Bypass***  [https://rastamouse.me/memory-patching-amsi-bypass/](https://rastamouse.me/memory-patching-amsi-bypass/)
+
+- ***AMSI***                    [https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
