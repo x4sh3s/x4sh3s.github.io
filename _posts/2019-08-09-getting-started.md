@@ -4,7 +4,7 @@ author: x4sh3s
 date: 2019-08-09 20:55:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
-pin: true
+hidden: true
 comments: true
 ---
 
