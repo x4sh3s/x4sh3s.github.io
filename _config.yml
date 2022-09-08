@@ -139,6 +139,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  hidden_posts:
+    output: false
+
 
 defaults:
   - scope:

