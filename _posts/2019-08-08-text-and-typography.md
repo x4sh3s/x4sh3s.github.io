@@ -2,8 +2,6 @@
 title: Text and Typography
 author: x4sh3s
 date: 2022-07-07 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography, ctf]
 math: true
 mermaid: true
 pin: false

