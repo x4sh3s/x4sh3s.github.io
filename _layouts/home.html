@@ -4,7 +4,7 @@ layout: page
 ---
 
 {% include lang.html %}
-<meta name="google-site-verification" content="UnJN0X8aSA7Vas0N6FhAFn-PjFV-OU0wZh9gGAnWM0o" />
+
 {% assign pinned = site.posts | where: "pin", "true" %}
 {% assign default = site.posts | where_exp: "item", "item.pin != true and item.hidden != true" %}
 
