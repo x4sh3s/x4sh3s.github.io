@@ -2,7 +2,7 @@
 title: "Divide And Bypass: A new Simple Way to Bypass AMSI"
 author: x4sh3s
 date: 2022-09-07 13:32:00 -0500
-categories: [Defences Evasion]
+categories: [Defense Evasion]
 tags: [amsi, powershell, bypass, windows ]
 image:
   path: /commons/divide.jpg
