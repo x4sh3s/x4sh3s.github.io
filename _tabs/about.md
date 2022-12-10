@@ -4,9 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
  Hi, My name is ***Brahim Chebli***, i'm from Morocco. I'm a penetration tester and junior red team operator with strong background on AD Exploitation, Web pentesting and Mal Dev/Analysis.
 
 
