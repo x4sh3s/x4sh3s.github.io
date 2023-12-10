@@ -16,8 +16,6 @@ order: 4
 
 Jul 2023 - Now · 6 months
 
-A training on external/internal and web application pentesting :
-
 - Doing Research and Development on Different red team aspects.
 - Bypassing Antivirus and EDR Solutions.
 - Deploying Red Team Infrastructure: C2, Phishing, Redirectors ...
@@ -34,7 +32,7 @@ Skills: Defence Evasion · Red Team's Infra Deployement · Report Writing · Mal
 
 Feb 2023 - Jul 2023 · 6 months
 
-A training on external/internal and web application pentesting :
+Red Team R&D :
 
 - Building a complex AD lab: 2 forests, child domains ...
 - Building Red Team infrastructure: C2, Redirectors ...
